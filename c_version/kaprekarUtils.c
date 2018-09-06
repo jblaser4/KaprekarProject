@@ -2,7 +2,7 @@
 
 #include "kaprekarUtils.h"
 
-/**
+/** Editor: Jarrod Blaser 9/6/2018
  * <p>This function tests whether the given input <code>n</code>
  * is a Kaprekar Number or not.  A Kaprekar Number is a non-negative
  * integer n whose square can be split into two positive integers
@@ -30,7 +30,7 @@ int isKaprekar(int n) {
 
   int i;
   long square = n * (long) n;
-  int numDigits = (int) log10(n) + 1;
+  int numDigits = (int) log10(square) + 1;
   long modulus = 1;
   long first, second;
 
